@@ -187,6 +187,27 @@ main {
   padding: 15px 8%;
   margin: 15px auto;
 }
+.bgroundValidate {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(26, 39, 156, 0.4);
+}
+
+.modalValidate{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  
+  padding: 3em;
+  height: 20em;
+}
 
 label {
   font-family: var(--font-default);
@@ -208,7 +229,7 @@ input {
   font-size: 20px;
   height: 48px;
 }
-.formData[data-error]::after {
+/* .formData[data-error]::after {
   content: attr(data-error);
   font-size: 0.4em;
   color: #e54858;
@@ -225,7 +246,7 @@ input {
 }
 .formData[data-error-visible="true"] .text-control {
   border: 2px solid #e54858;
-}
+} */
 /* 
 input[data-error]::after {
     content: attr(data-error);
@@ -405,7 +426,6 @@ input[data-error]::after {
   font-size: 16px;
 }
 .hero-section {
-  min-height: 93vh;
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -441,7 +461,7 @@ input[data-error]::after {
   white-space: nowrap;
 }
 .hero-text {
-  width: 146%;
+  
   font-weight: normal;
   margin-top: 57px;
   padding: 0;
@@ -478,6 +498,19 @@ footer {
   padding-right: 2vw;
   margin: 0 20px;
 }
+
+/* Mise en formes des formulaires invalides */
+
+form.submitted input:invalid{
+  border-color: #FF4E60;
+}
+.error{
+  font-size: 12px;
+  color: #FF4E60;
+}
+.error.active{
+  padding: 0.3em;
+}
 @media screen and (max-width: 800px) {
   .hero-section {
     display: block;
@@ -499,8 +532,8 @@ footer {
     white-space: normal;
   }
   .hero-text {
-    width: unset;
-    font-size: 1.5rem;
+    
+    font-size: 1.2rem;
   }
   .hero-img img {
     border-radius: 10px;
