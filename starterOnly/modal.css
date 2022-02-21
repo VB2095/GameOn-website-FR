@@ -507,9 +507,12 @@ form.submitted input:invalid{
 .error{
   font-size: 12px;
   color: #FF4E60;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .error.active{
   padding: 0.3em;
+  
 }
 @media screen and (max-width: 800px) {
   .hero-section {
