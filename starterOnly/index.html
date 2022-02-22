@@ -55,15 +55,15 @@
       <div class="content">
         <span class="close" id="close"></span>
         <div class="modal-body">
-          <form name="reserve" action="index.html" method="get" novalidate>
+          <form name="reserve" action="index.html" method="get">
             <div class="formData">
               <label>Prénom</label><br>
-              <input class="text-control" type="text" id="first" name="first" min="2" required/><br>
+              <input class="text-control" type="text" id="first" name="first" min="2" required /><br>
               <span class="errorFirstName"></span>
             </div>
             <div class="formData">
               <label>Nom</label><br>
-              <input class="text-control" type="text" id="last" name="last" min="2" required/><br>
+              <input class="text-control" type="text" id="last" name="last" min="2" required /><br>
               <span class="errorLastName"></span>
             </div>
             <div class="formData">
@@ -73,7 +73,8 @@
             </div>
             <div class="formData">
               <label>Date de naissance</label><br>
-              <input class="text-control" type="date" id="birthdate" name="birthdate" max="2003-31-12" /><br>
+              <input class="text-control" type="date" id="birthdate" name="birthdate" maxlength="4"
+                pattern="[1-9][0-9]{3}" max="2003" /><br>
               <span class="errorBirthDate"></span>
             </div>
             <div class="formData">
@@ -107,12 +108,12 @@
               <label class="checkbox-label" for="location6">
                 <span class="checkbox-icon"></span>
                 Portland</label>
-                
+
             </div>
             <div>
               <span class="error errorCity"></span>
             </div>
-            
+
 
             <div class="formData">
               <input class="checkbox-input" type="checkbox" id="checkbox1" required />
@@ -120,9 +121,9 @@
                 <span class="checkbox-icon"></span>
                 J'ai lu et accepté les conditions d'utilisation. <br>
                 <span class="error errorAcceptance"></span>
-                
+
               </label>
-              
+
               <br>
               <input class="checkbox-input" type="checkbox" id="checkbox2" />
               <label class="checkbox2-label" for="checkbox2">
@@ -140,8 +141,8 @@
       <div class="content">
         <span class="close" id="closeValidation"></span>
         <div class="modal-body modalValidate">
-            <p>Merci pour votre inscription</p>
-            <input class="btn-submit" type="submit" class="button" id="closeValidationModal" value="Fermer" />
+          <p>Merci pour votre inscription</p>
+          <input class="btn-submit" type="submit" class="button" id="closeValidationModal" value="Fermer" />
 
         </div>
       </div>
