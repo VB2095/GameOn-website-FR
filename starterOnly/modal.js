@@ -78,7 +78,7 @@ window.addEventListener("click", function (event) {
 
 function checkFirstName() {
   if (firstName.value.length < 2) {
-    errorFirstName.innerHTML = "Veuillez rentrer un prénom correct";
+    errorFirstName.innerHTML = "Le prénom ne peut pas être vide et doit faire plus de 2 caractères";
     errorFirstName.className = "error active";
     return false;
   } else {
@@ -90,7 +90,7 @@ function checkFirstName() {
 
 firstName.addEventListener("input", function (event) {
   if (firstName.value.length < 2) {
-    errorFirstName.innerHTML = "Veuillez rentrer un prénom correct";
+    errorFirstName.innerHTML = "Le prénom ne peut pas être vide et doit faire plus de 2 caractères";
     errorFirstName.className = "error active";
     return false;
   } else {
@@ -102,7 +102,7 @@ firstName.addEventListener("input", function (event) {
 
 function checkLastName() {
   if (lastName.value.length < 2) {
-    errorLastName.innerHTML = "Veuillez rentrer un nom correct";
+    errorLastName.innerHTML = "Le nom ne peut pas être vide et doit faire plus de 2 caractères";
     errorLastName.className = "error active";
     event.preventDefault;
     return false;
@@ -115,7 +115,7 @@ function checkLastName() {
 
 lastName.addEventListener("input", function (event) {
   if (lastName.value.length < 2) {
-    errorLastName.innerHTML = "Veuillez rentrer un nom correct";
+    errorLastName.innerHTML = "Le nom ne peut pas être vide et doit faire plus de 2 caractères";
     errorLastName.className = "error active";
     event.preventDefault;
     return false;
